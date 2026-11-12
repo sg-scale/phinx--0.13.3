@@ -110,7 +110,7 @@ jobs:
 
     - name: Submit code coverage
       if: matrix.php-version == '8.1'
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v7
 
   testsuite-windows:
     runs-on: windows-2019
@@ -178,7 +178,7 @@ jobs:
           vendor/bin/phpunit --verbose --coverage-clover=coverage.xml
 
     - name: Submit code coverage
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v7
 
   cs-stan:
     name: Coding Standard & Static Analysis
